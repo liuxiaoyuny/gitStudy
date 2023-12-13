@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="username">用户名：</label>
+        <input type="text" id="username" placeholder="请输入你的大名" />
+      </div>
+      <div>
+        <label for="pwd">密 码：</label>
+        <input type="password" id="pwd" placeholder="请输入你的密码" />
+      </div>
+      <div>
+        性别：
+        <!-- 
+            单选框name属性要保持一致说明是一组数据
+            checked设置默认选中
+         -->
+        <input type="radio" name="sex" checked />男
+        <input type="radio" name="sex" />女
+      </div>
+      <div>
+        爱好：
+        <input type="checkbox" name="hobby" /> 睡觉
+        <input type="checkbox" name="hobby" checked /> 旅游
+        <input type="checkbox" name="hobby" /> 购物
+        <input type="checkbox" name="hobby" checked /> 敲代码
+        <input type="checkbox" name="hobby" /> 打游戏
+      </div>
+      <div>
+        上传帅照：
+        <input type="file" />
+      </div>
+      <div>
+        省份：
+        <select>
+          <option>请选择</option>
+          <option>江西省</option>
+          <option>湖南省</option>
+          <option selected>广东省</option>
+          <option>台湾省</option>
+        </select>
+      </div>
+      <div>
+        评论：
+        <textarea cols="30" rows="5"></textarea>
+      </div>
+      <div>
+        <input type="submit" value="注册" />
+        <button>登录</button>
+      </div>
+    </form>
+  </body>
+</html>
